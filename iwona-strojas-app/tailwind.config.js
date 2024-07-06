@@ -10,6 +10,7 @@ module.exports = {
         'hero-background': "url('./src/assets/239884819_1409526429430543_3468945226487686512_n.jpg')",
       },
       colors: {
+        'white': 'var(--color-background-default)',
         'blue': '#A8E3EB',
         'purple': '#7e5bef',
         'pink': '#ff49db',
@@ -25,10 +26,10 @@ module.exports = {
         '2xl': {'min': '1535px'},
         // => @media (max-width: 1535px) { ... }
   
-        'xl': {'min': '1279px'},
+        'xl': {'min': '1280px'},
         // => @media (max-width: 1279px) { ... }
   
-        'lg': {'min': '767px', 'max': '1279px'},
+        'lg': {'max': '1279px'},
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
   
         'sm': {'max': '767px'},

@@ -1,4 +1,5 @@
 import { HeroSection } from "../components/hero"
+import { QuoteSection } from "../components/quote-section";
 import { ArticleCard } from "../ui/Card/Card"
 import { articlesContent } from "../utils/articlesArray"
 
@@ -10,35 +11,40 @@ export const HeroPage = () => {
   return (
     <>
       <HeroSection />
-      <div className="flex flex-col items-center">
-        {articleSection1.map(item => (
-          <ArticleCard
-            articleImg={item.img}
-            heading={item.heading}
-            paragraph1={item.paragraph1}
-            paragraph2={item.paragraph2}
-            order={item.gridOrder} 
-            key={item.id}/>
-        ))}
-        {articleSection2.map(item => (
-          <ArticleCard
-            articleImg={item.img}
-            heading={item.heading}
-            paragraph1={item.paragraph1}
-            paragraph2={item.paragraph2}
-            order={item.gridOrder}
-            key={item.id} />
-        ))}
-        {articleSection3.map(item => (
-          <ArticleCard
-            articleImg={item.img}
-            heading={item.heading}
-            paragraph1={item.paragraph1}
-            paragraph2={item.paragraph2}
-            order={item.gridOrder}
-            key={item.id} />
-        ))}
-      </div>
+      {articleSection1.map(item => (
+        <ArticleCard
+          articleImg={item.img}
+          heading={item.heading}
+          featuredHeading={item.featuredHeading}
+          paragraph1={item.paragraph1}
+          paragraph2={item.paragraph2}
+          key={item.id}
+          className={item.style}
+          headingPosition={item.headingPosition} />
+      ))}
+      <QuoteSection />
+      {articleSection2.map(item => (
+        <ArticleCard
+          articleImg={item.img}
+          heading={item.heading}
+          featuredHeading={item.featuredHeading}
+          paragraph1={item.paragraph1}
+          paragraph2={item.paragraph2}
+          key={item.id} 
+          className={item.style}
+          headingPosition={item.headingPosition} />
+      ))}
+      {articleSection3.map(item => (
+        <ArticleCard
+          articleImg={item.img}
+          heading={item.heading}
+          featuredHeading={item.featuredHeading}
+          paragraph1={item.paragraph1}
+          paragraph2={item.paragraph2}
+          key={item.id} 
+          className={item.style}
+          headingPosition={item.headingPosition} />
+      ))}
     </>
   )
 }

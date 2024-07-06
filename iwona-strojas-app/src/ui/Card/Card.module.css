@@ -1,32 +1,39 @@
+.section {
+  margin-top: 3rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 0.75rem;
-  gap: 3rem;
+  padding: 0 0.75rem 1.7rem 0.75rem;
+  gap: 1.5rem;
   position: relative;
 }
 
-@media (min-width: 767px) and (max-width: 1279px) {
+.cardSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-heading {
+  position: absolute;
 }
 
 @media (min-width: 1280px) {
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
   .card {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 70%;
     height: 60%;
     padding: 0;
-  }
-
-  /*
-    Grid position
-  */
-
-  .order--default {
-    order: 1;
-  }
-
-  .order--reverse {
-    order: 2;
+    gap: 4rem;
   }
 }

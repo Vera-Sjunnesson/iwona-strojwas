@@ -4,30 +4,45 @@ import CardStyles from './Card.module.css'
 interface Props {
   articleImg: string
   heading: string
+  featuredHeading?: string
   paragraph1: string
   paragraph2?: string
-  order?: string,
   key: number,
+  className?: string
+  headingPosition?: string
 }
 
 export const ArticleCard = ({
   articleImg,
   heading,
+  featuredHeading,
   paragraph1,
   paragraph2,
-  order,
   key,
+  className,
+  headingPosition,
 }: Props) => {
 
-  const classes = [CardStyles['card']]
+  const sectionClasses = [CardStyles['section']]
+  const cardClasses = [CardStyles['card']]
+  const cardSectionClasses = [CardStyles['cardSection']]
+  const headingClasses = [CardStyles['featured-heading']]
+
+  if (className) {
+    cardSectionClasses.push(className)
+  }
+
+  if (headingPosition) {
+    headingClasses.push(headingPosition)
+  }
 
   return (
-    <section key={key} className="h-screen flex justify-center items-center">
-      <article className={classes.join(' ')}>
-        <Heading className="absolute bottom-0 right-0" color="tertiary">
-          DITT INRE VÄLMÅENDE
+    <section key={key} className={sectionClasses.join(' ')}>
+      <article className={cardClasses.join(' ')}>
+        <Heading className={headingClasses.join(' ')} color="tertiary">
+          {featuredHeading}
         </Heading>
-        <section className={`flex flex-col ${order}`}>
+        <section className={cardSectionClasses.join(' ')}>
           <Heading level={4} weight="bold">
             {heading}
           </Heading>
@@ -40,7 +55,7 @@ export const ArticleCard = ({
             </Text>
           )}
         </section>
-        <img src={articleImg} className="w-full h-full object-cover" />
+        <img src={articleImg} className="w-full object-cover xl:h-full lg:h-96" />
       </article>
     </section>
   )

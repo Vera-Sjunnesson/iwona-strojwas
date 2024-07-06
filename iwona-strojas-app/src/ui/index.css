@@ -38,13 +38,17 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: var(--color-text-default);
+  text-decoration: none;
 }
 
 a:hover {
   color: #535bf2;
 }
+
+/* .active {
+  display: none;
+} */
 
 body {
   margin: 0;
@@ -74,6 +78,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  outline: none;
 }
 
 button:hover {
@@ -83,6 +88,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: light) {
