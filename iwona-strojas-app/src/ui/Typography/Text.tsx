@@ -13,6 +13,7 @@ type Props = {
   color?: TextColor
   level?: 1 | 2 | 3 | 4
   weight?: 'regular' | 'medium' | 'bold' | 'light'
+  className?: string
 }
 
 export const Text = ({
@@ -21,6 +22,7 @@ export const Text = ({
   color = 'default',
   level = 1,
   weight = 'regular',
+  className,
 }: Props) => {
   const classes = [TextStyles['typography-text']]
 
@@ -38,6 +40,10 @@ export const Text = ({
 
   if (weight) {
     classes.push(TextStyles[`typography-text--${weight}`])
+  }
+
+  if (className) {
+    classes.push(className)
   }
 
   return (

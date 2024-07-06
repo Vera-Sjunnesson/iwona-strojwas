@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.75rem;
+  gap: 3rem;
+  position: relative;
+}
+
+@media (min-width: 767px) and (max-width: 1279px) {
+}
+
+@media (min-width: 1280px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 70%;
+    height: 60%;
+    padding: 0;
+  }
+
+  /*
+    Grid position
+  */
+
+  .order--default {
+    order: 1;
+  }
+
+  .order--reverse {
+    order: 2;
+  }
+}

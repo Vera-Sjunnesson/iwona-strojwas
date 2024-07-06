@@ -2,14 +2,14 @@
   background-color: var(--color-background-inverted);
   color: var(--color-text-default);
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: 1.188rem;
   cursor: pointer;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   outline: none;
   user-select: none;
   white-space: nowrap;
+  align-self: center;
 }
 
 /*
@@ -20,7 +20,7 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 2.625rem;
 }
 
 .btn--small {

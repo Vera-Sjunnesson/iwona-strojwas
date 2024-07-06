@@ -570,16 +570,85 @@ video {
   left: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-none {
+  order: 0;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .bg-cover {
   background-size: cover;
 }
 
-.bg-center {
-  background-position: center;
+.bg-right-top {
+  background-position: right top;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-3 {
@@ -590,6 +659,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.italic {
+  font-style: italic;
 }
 
 :root {
@@ -604,10 +677,9 @@ video {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Text */
-  --color-text-default: #111111;
-  --color-text-secondary: #595959;
-  --color-text-tertiary: #939393;
-  --color-text-inverted: #ffffff;
+  --color-text-default: #222222;
+  --color-text-secondary: #A8E3EB;
+  --color-text-tertiary: #BE665A;
   /* Heading */
   --color-heading-default: #222222;
   --color-heading-secondary: #A8E3EB;
@@ -638,17 +710,14 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-p {
+p, h4 {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 
 button {
@@ -684,6 +753,28 @@ button:focus-visible {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: 1279px) {
+  .xl\:order-1 {
+    order: 1;
+  }
+
+  .xl\:order-none {
+    order: 0;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
   }
 }
 

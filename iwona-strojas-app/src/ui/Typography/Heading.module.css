@@ -1,6 +1,7 @@
 .typography-heading {
   color: var(--color-text-default);
   font-style: normal;
+  margin-bottom: 0.7rem;
 }
 
 /*
@@ -8,8 +9,8 @@
 */
 
 h1.typography-heading {
-  font-size: 2.375rem; /* 38px */
-  line-height: 2.8125rem; /* 45px */
+  font-size: 4rem; 
+  line-height: 4.2rem;
 }
 
 h2.typography-heading {
@@ -51,4 +52,21 @@ h6.typography-heading {
 
 .typography-heading--tertiary {
   color: var(--color-heading-tertiary);
+}
+
+/*  Font Weights */
+.typography-heading--light {
+  font-weight: 200;
+}
+
+.typography-heading--regular {
+  font-weight: 400;
+}
+
+.typography-heading--medium {
+  font-weight: 500;
+}
+
+.typography-heading--bold {
+  font-weight: 700;
 }
