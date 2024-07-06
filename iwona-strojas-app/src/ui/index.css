@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,11 +17,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  /* Text */
+  --color-text-default: #222222;
+  --color-text-secondary: #A8E3EB;
+  --color-text-tertiary: #BE665A;
+
+  /* Heading */
+  --color-heading-default: #222222;
+  --color-heading-secondary: #A8E3EB;
+  --color-heading-tertiary: #5AB2BE;
+
+  /* Background */
+  --color-background-default: #ffffff;
+  --color-background-float: #e2e2e2;
+  --color-background-inline: #f1f1f1;
+  --color-background-inverted: #A8E3EB;
+  --color-background-multiply: #595959;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -30,9 +54,14 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Inter", sans-serif;
 }
 
 button {
@@ -46,9 +75,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -66,3 +97,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+

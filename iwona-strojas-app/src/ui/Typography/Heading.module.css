@@ -1,0 +1,54 @@
+.typography-heading {
+  color: var(--color-text-default);
+  font-style: normal;
+}
+
+/*
+  Text variants
+*/
+
+h1.typography-heading {
+  font-size: 2.375rem; /* 38px */
+  line-height: 2.8125rem; /* 45px */
+}
+
+h2.typography-heading {
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.875rem; /* 30px */
+}
+
+h3.typography-heading {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.8125rem; /* 29px */
+}
+
+h4.typography-heading {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.5rem; /* 24px */
+}
+
+h5.typography-heading {
+  font-size: 1.1rem; /* 18px */
+  line-height: 1.3rem; /* 21px */
+}
+
+h6.typography-heading {
+  font-size: 1rem; /* 16px */
+  line-height: 1.3rem; /* 21px */
+}
+
+/*
+  Text color
+*/
+
+.typography-heading--default {
+  color: var(--color-heading-default);
+}
+
+.typography-heading--secondary {
+  color: var(--color-heading-secondary);
+}
+
+.typography-heading--tertiary {
+  color: var(--color-heading-tertiary);
+}
