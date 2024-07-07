@@ -3,11 +3,11 @@ import CardStyles from './Card.module.css'
 
 interface Props {
   articleImg: string
-  heading: string
+  heading?: string
   featuredHeading?: string
   paragraph1: string
   paragraph2?: string
-  key: number,
+  key?: number,
   className?: string
   headingPosition?: string
 }
