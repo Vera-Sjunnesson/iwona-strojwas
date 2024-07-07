@@ -22,11 +22,13 @@
   --color-text-default: #222222;
   --color-text-secondary: #A8E3EB;
   --color-text-tertiary: #BE665A;
+  --color-text-strong: #5AB2BE;
 
   /* Heading */
   --color-heading-default: #222222;
   --color-heading-secondary: #A8E3EB;
   --color-heading-tertiary: #5AB2BE;
+  --color-heading-strong: #CB4A4A;
 
   /* Background */
   --color-background-default: #ffffff;
@@ -45,10 +47,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-
-/* .active {
-  display: none;
-} */
 
 body {
   margin: 0;
@@ -92,6 +90,10 @@ button:focus-visible {
 
 body.no-scroll {
   overflow: hidden;
+}
+
+.word-transition {
+  transition: all 1s ease-in-out;
 }
 
 @media (prefers-color-scheme: light) {

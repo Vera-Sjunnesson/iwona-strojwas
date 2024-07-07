@@ -1,9 +1,9 @@
-import { HeroSection } from "../components/hero"
+import { TextOnImage } from "../ui/TextOnImage/TextOnImage"
 
 export const InfoPage = () => {
   return (
     <>
-      <HeroSection />
+      <TextOnImage />
     </>
   )
 }

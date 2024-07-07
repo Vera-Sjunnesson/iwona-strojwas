@@ -78,6 +78,21 @@ h6.typography-heading {
   color: var(--color-heading-tertiary);
 }
 
+.typography-heading--strong {
+  color: var(--color-heading-strong);
+}
+
+.typography-heading--responsive {
+  color: var(--color-heading-secondary);
+}
+
+@media (min-width: 1280px) {
+
+  .typography-heading--responsive {
+    color: var(--color-heading-tertiary);
+  }
+}
+
 /*  Font Weights */
 .typography-heading--light {
   font-weight: 200;

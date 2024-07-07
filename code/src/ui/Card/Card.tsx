@@ -1,15 +1,24 @@
 import { Heading, Text } from '../Typography'
 import CardStyles from './Card.module.css'
 
+export type gridColumns =
+  | 'grid-default'
+  | 'grid-leftLarge'
+  | 'grid-rightLarge'
+
 interface Props {
   articleImg: string
   heading?: string
   featuredHeading?: string
   paragraph1: string
   paragraph2?: string
+  paragraph3?: string
+  paragraph4?: string
   key?: number,
   className?: string
   headingPosition?: string
+  gridColumns?: gridColumns
+  imgSize?: string
 }
 
 export const ArticleCard = ({
@@ -18,9 +27,13 @@ export const ArticleCard = ({
   featuredHeading,
   paragraph1,
   paragraph2,
+  paragraph3,
+  paragraph4,
   key,
   className,
   headingPosition,
+  gridColumns = "grid-default",
+  imgSize = "w-full xl:h-full lg:h-96"
 }: Props) => {
 
   const sectionClasses = [CardStyles['section']]
@@ -34,6 +47,10 @@ export const ArticleCard = ({
 
   if (headingPosition) {
     headingClasses.push(headingPosition)
+  }
+
+  if (gridColumns) {
+    cardClasses.push(CardStyles[`card--${gridColumns}`])
   }
 
   return (
@@ -54,8 +71,18 @@ export const ArticleCard = ({
               {paragraph2}
             </Text>
           )}
+          {paragraph3 && (
+            <Text level={2} className="mt-4">
+              {paragraph3}
+            </Text>
+          )}
+          {paragraph4 && (
+            <Text level={2} className="mt-4">
+              {paragraph4}
+            </Text>
+          )}
         </section>
-        <img src={articleImg} className="w-full object-cover xl:h-full lg:h-96" />
+        <img src={articleImg} className={`object-cover ${imgSize}`} />
       </article>
     </section>
   )

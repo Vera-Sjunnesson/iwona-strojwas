@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.card--grid-leftLarge {
+  flex-direction: column-reverse;
+}
+
 .cardSection {
   display: flex;
   flex-direction: column;
@@ -18,6 +22,38 @@
 .featured-heading {
   position: absolute;
 }
+
+@media (min-width: 767px) and (max-width: 1280px) {
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .card {
+    display: grid;
+    max-width: 90%;
+    height: 60%;
+    padding: 0;
+    gap: 4rem;
+  }
+
+  .card--grid-default {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card--grid-leftLarge {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .card--grid-rightLarge {
+    grid-template-columns: 1fr 2fr;
+  }
+
+}
+
 
 @media (min-width: 1280px) {
   .section {
@@ -35,5 +71,17 @@
     height: 60%;
     padding: 0;
     gap: 4rem;
+  }
+
+  .card--grid-default {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card--grid-leftLarge {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .card--grid-rightLarge {
+    grid-template-columns: 1fr 2fr;
   }
 }

@@ -23,6 +23,21 @@
   color: var(--color-text-tertiary);
 }
 
+.typography-text--strong {
+  color: var(--color-text-strong);
+}
+
+.typography-text--responsive {
+  color: var(--color-heading-secondary);
+}
+
+@media (min-width: 1280px) {
+
+  .typography-text--responsive {
+    color: var(--color-heading-tertiary);
+  }
+}
+
 /* Sizes */
 
 .typography-text--1 {

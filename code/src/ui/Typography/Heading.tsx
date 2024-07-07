@@ -6,6 +6,9 @@ export type HeadingColor =
   | 'default'
   | 'secondary'
   | 'tertiary'
+  | 'strong'
+  | 'responsive'
+
 
 interface Props {
   children: ReactNode

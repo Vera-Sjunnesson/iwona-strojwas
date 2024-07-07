@@ -28,11 +28,13 @@ module.exports = {
   
         'xl': {'min': '1280px'},
         // => @media (max-width: 1279px) { ... }
-  
+
         'lg': {'max': '1279px'},
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
   
         'sm': {'max': '767px'},
+        // => @media (max-width: 639px) { ... }
+        'sx': {'min': '767px'},
         // => @media (max-width: 639px) { ... }
       }
     },

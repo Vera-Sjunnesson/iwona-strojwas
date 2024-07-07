@@ -4,6 +4,7 @@ import { ArticleCard } from "../ui/Card/Card"
 import { articlesContent } from "../utils/articlesArray"
 import quoteImage1 from "../assets/art2.jpg"
 import quoteImage2 from "../assets/beach.jpg"
+import { SimpleCloud } from "../components/wordCloud";
 
 export const HeroPage = () => {
   const articleSection1 = articlesContent.slice(0, 1);
@@ -38,6 +39,7 @@ export const HeroPage = () => {
           className={item.style}
           headingPosition={item.headingPosition} />
       ))}
+      <SimpleCloud />
       <QuoteSection
         quoteText="Familjen är hjärtat av vårt välbefinnande. Genom familjeterapi eller rådgivning erbjuder jag en bro till ökad förståelse och bättre relationer inom familjen."
         quoteImage={quoteImage2} />
