@@ -38,6 +38,10 @@
   --color-background-multiply: #595959;
 }
 
+body {
+  background: var(--color-background-default);
+}
+
 a {
   font-weight: 500;
   color: var(--color-text-default);
@@ -46,14 +50,6 @@ a {
 
 a:hover {
   color: #CB4A4A;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1, h2, h3, h5, h6 {
