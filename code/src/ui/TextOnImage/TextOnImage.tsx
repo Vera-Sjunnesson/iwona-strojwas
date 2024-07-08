@@ -4,10 +4,10 @@ import { Heading, Text } from '../../ui/Typography'
 
 export const TextOnImage = () => {
   return (
-    <div className="xl:h-screen lg:h-[51.625rem] w-screen">
-      <div className="relative">
-      <div style={{ backgroundImage: `url(${heroImg})` }} className="xl:h-screen lg:h-[51.625rem] bg-cover bg-right-top" />
-      <div style={{ backgroundImage: "linear-gradient(15deg, rgba(34, 34, 34, 0.8) 30%, rgba(34, 34, 34, 0.5) 65%)" }} className="xl:hidden lg:block w-full absolute top-0 left-0 lg:h-[51.625rem] bg-cover bg-right-top" />
+    <div className="xl:h-[100vh] lg:h-[51.625rem] min-h-[51.625rem] w-screen">
+      <div className="relative h-full">
+      <div style={{ backgroundImage: `url(${heroImg})` }} className="h-full bg-cover bg-right-top" />
+      <div style={{ backgroundImage: "linear-gradient(15deg, rgba(34, 34, 34, 0.8) 30%, rgba(34, 34, 34, 0.5) 65%)" }} className="xl:hidden lg:block w-full h-full absolute top-0 left-0 lg:h-[51.625rem] bg-cover bg-right-top" />
       <article className="absolute sx:left-20 top-20 sx:mx-auto flex flex-col py-6 px-3 sx:max-w-lg">
         <Heading color="responsive">
           PSYKOTERAPI ONLINE

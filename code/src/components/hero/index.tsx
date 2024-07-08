@@ -4,10 +4,11 @@ import { Heading, Text } from '../../ui/Typography'
 
 export const HeroSection = () => {
   return (
-    <div className="h-screen w-screen">
-      <div className="relative">
-      <div style={{ backgroundImage: `linear-gradient(15deg, rgba(34, 34, 34, 0.8) 30%, rgba(255, 255, 255, 0) 65%), url(${heroImg})` }} className="h-screen bg-cover bg-right-top" />
-      <article className="absolute sx:left-20 sx:bottom-20 sm:left-0 sm:bottom-5 flex flex-col py-6 px-3 max-w-lg">
+    <div className="relative">
+      <div
+        style={{ backgroundImage: `linear-gradient(15deg, rgba(34, 34, 34, 0.8) 30%, rgba(255, 255, 255, 0) 65%), url(${heroImg})` }} 
+        className="lg:min-h-[400px] xl:min-h-[580px] h-[100vh] bg-cover bg-right-top" />
+      <article className="absolute xl:left-20 xl:bottom-20 lg:left-0 lg:bottom-0 flex flex-col lg:py-6 sm:px-3 lgx:px-12 lgx:py-12 max-w-lg">
         <Heading color="secondary">
           DITT INRE VÄLMÅENDE
         </Heading>
@@ -18,7 +19,6 @@ export const HeroSection = () => {
           Boka terapi
         </Button>
       </article>
-      </div>
     </div>
   )
 }

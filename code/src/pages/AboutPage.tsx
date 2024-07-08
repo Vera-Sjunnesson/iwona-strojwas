@@ -31,7 +31,7 @@ const contactList = [
 
 export const AboutPage = () => {
   return (
-    <div className="sm:px-2 pb-24 pt-12 lgx:flex lgx:flex-col lgx:gap-12">
+    <div className="sm:px-2 pb-24 pt-12 lgx:flex lgx:flex-col h-auto">
       <ArticleCard
         articleImg={iwonaPortrait}
         featuredHeading="IWONA STROJWAS"
@@ -51,7 +51,7 @@ export const AboutPage = () => {
         gridColumns="grid-leftLarge"
         columnDirection="column-reverse"
         imgSize="xl:h-4/6 lg:h-80 lg:max-w-72" />
-      <section className="flex flex-col sx:items-center lgx:h-[70vh] sm:px-3">
+      <section className="flex flex-col sx:items-center xl:-[100vh] lgx:h-[70vh] sm:px-3 lgx:pb-24">
         <div className="xl:grid xl:grid-cols-2 lgx:w-[90%] xl:max-w-[70%] flex flex-col-reverse xl:items-center lg:items-start gap-8">
           <div className="flex flex-col gap-8">
             <div>
