@@ -55,8 +55,9 @@
     background: transparent;
     border: none;
     position: relative;
-    padding: 10px 20px;
+    padding: 10px;
     z-index: 1300;
+    margin-left: 42px;
   }
   
   .nav-right {
@@ -285,6 +286,12 @@
 
   .button {
     display: none;
+  }
+}
+
+@media (max-width: 502px) {
+  .button {
+    margin-left: 15px;
   }
 }
 

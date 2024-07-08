@@ -16,11 +16,11 @@
 */
 
 .btn--medium {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-  padding: 1rem 2.625rem;
-  border-radius: 1.188rem;
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
 }
 
 .btn--small {
@@ -28,6 +28,19 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.25rem;
-  padding: 0.5rem 2.625rem;
-  border-radius:0.938rem;
+  padding: 0.3rem 1.3rem;
+  border-radius:0.7rem;
+}
+
+@media (min-width: 502px) {
+  .btn--small {
+    padding: 0.5rem 2.625rem;
+    border-radius:0.938rem;
+  }
+
+  .btn--medium {
+    font-size: 1.25rem;
+    padding: 1rem 2.625rem;
+    border-radius: 1.188rem;
+  }
 }

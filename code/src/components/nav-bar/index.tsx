@@ -21,7 +21,7 @@ export const NavBar = () => {
   ]
 
   return (
-    <nav className="flex justify-end items-center gap-8 lg:hidden">
+    <nav className="flex justify-end items-center gap-8 lg:hidden mr-8">
       {navLinksToBeDisplayed.map(item => (
         <NavLink key={item.id} to={item.to}>
           {item.title}

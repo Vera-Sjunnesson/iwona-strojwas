@@ -12,7 +12,7 @@ export const wordData = [
   { id: 12, text: "Depression", value: "20px", color: "#5AB2BE" },
   { id: 13, text: "Divorce", value: "36px", color: "#5AB2BE" },
   { id: 14, text: "Stress", value: "36px", color: "#5AB2BE" },
-  { id: 15, text: "Relationships", value: "4rem", color: "#5AB2BE" },
+  { id: 15, text: "Relationships", value: "3.5rem", color: "#5AB2BE" },
   { id: 16, text: "Cancer", value: "20px", color: "#5AB2BE" },
   { id: 17, text: "Workplace Issues", value: "36px", color: "#5AB2BE" },
   { id: 18, text: "Individual Therapy", value: "64px", color: "#A83526" },
