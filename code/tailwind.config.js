@@ -30,11 +30,13 @@ module.exports = {
         // => @media (max-width: 1279px) { ... }
 
         'lg': {'max': '1279px'},
-      // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+        'lgx': {'min': '767px', 'max': '1279px'},
+      // => @media (min-width: 767px and max-width: 1279px) { ... }
   
         'sm': {'max': '767px'},
         // => @media (max-width: 639px) { ... }
-        'sx': {'min': '767px'},
+        'sx': {'min': '768px'},
         // => @media (max-width: 639px) { ... }
       }
     },

@@ -7,7 +7,7 @@ export const HeroSection = () => {
     <div className="h-screen w-screen">
       <div className="relative">
       <div style={{ backgroundImage: `linear-gradient(15deg, rgba(34, 34, 34, 0.8) 30%, rgba(255, 255, 255, 0) 65%), url(${heroImg})` }} className="h-screen bg-cover bg-right-top" />
-      <article className="absolute left-0 bottom-5 flex flex-col py-6 px-3 max-w-lg">
+      <article className="absolute sx:left-20 sx:bottom-20 sm:left-0 sm:bottom-5 flex flex-col py-6 px-3 max-w-lg">
         <Heading color="secondary">
           DITT INRE VÄLMÅENDE
         </Heading>

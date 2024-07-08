@@ -23,7 +23,8 @@ export const HeroPage = () => {
           paragraph2={item.paragraph2}
           key={item.id}
           className={item.style}
-          headingPosition={item.headingPosition} />
+          headingPosition={item.headingPosition}
+          gridColumns={item.grid} />
       ))}
       <QuoteSection 
         quoteText="Livet är i ständig förändring och kan utmana oss, det är mänskligt att känna oro, ångest eller hamna i en existentiell kris."
@@ -37,12 +38,14 @@ export const HeroPage = () => {
           paragraph2={item.paragraph2}
           key={item.id} 
           className={item.style}
-          headingPosition={item.headingPosition} />
+          headingPosition={item.headingPosition}
+          gridColumns={item.grid} />
       ))}
       <SimpleCloud />
       <QuoteSection
         quoteText="Familjen är hjärtat av vårt välbefinnande. Genom familjeterapi eller rådgivning erbjuder jag en bro till ökad förståelse och bättre relationer inom familjen."
-        quoteImage={quoteImage2} />
+        quoteImage={quoteImage2}
+        topPosition="sx:top-24 sm:top-4" />
       {articleSection3.map(item => (
         <ArticleCard
           articleImg={item.img}
@@ -52,7 +55,8 @@ export const HeroPage = () => {
           paragraph2={item.paragraph2}
           key={item.id} 
           className={item.style}
-          headingPosition={item.headingPosition} />
+          headingPosition={item.headingPosition}
+          gridColumns={item.grid} />
       ))}
     </>
   )

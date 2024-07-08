@@ -18,6 +18,7 @@ interface Props {
   className?: string
   headingPosition?: string
   gridColumns?: gridColumns
+  columnDirection?: 'column' | 'column-reverse'
   imgSize?: string
 }
 
@@ -33,6 +34,7 @@ export const ArticleCard = ({
   className,
   headingPosition,
   gridColumns = "grid-default",
+  columnDirection = "column",
   imgSize = "w-full xl:h-full lg:h-96"
 }: Props) => {
 
@@ -53,12 +55,13 @@ export const ArticleCard = ({
     cardClasses.push(CardStyles[`card--${gridColumns}`])
   }
 
+  if (columnDirection) {
+    cardClasses.push(CardStyles[`card--${columnDirection}`])
+  }
+
   return (
     <section key={key} className={sectionClasses.join(' ')}>
       <article className={cardClasses.join(' ')}>
-        <Heading className={headingClasses.join(' ')} color="tertiary">
-          {featuredHeading}
-        </Heading>
         <section className={cardSectionClasses.join(' ')}>
           <Heading level={4} weight="bold">
             {heading}
@@ -82,7 +85,12 @@ export const ArticleCard = ({
             </Text>
           )}
         </section>
-        <img src={articleImg} className={`object-cover ${imgSize}`} />
+        <div className="sm:relative">
+          <img src={articleImg} className={`object-cover ${imgSize}`} />
+          <Heading className={headingClasses.join(' ')} color="tertiary">
+            {featuredHeading}
+          </Heading>
+        </div>
       </article>
     </section>
   )

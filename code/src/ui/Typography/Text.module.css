@@ -41,8 +41,8 @@
 /* Sizes */
 
 .typography-text--1 {
-  font-size: 1.25rem; /* 20 px */
-  line-height: 1.75rem; /* 28px */
+  font-size: 2.25rem; /* 36 px */
+  line-height: 3rem; /* 44px */
 }
 
 .typography-text--2 {
@@ -58,17 +58,6 @@
 .typography-text--4 {
   font-size: 0.75rem; /* 12px */
   line-height: 1.125rem; /* 18 px */
-}
-
-@media (min-width: 1280px) {
-  /*
-    Text variants
-  */
-
-  .typography-text--1 {
-    font-size: 2.25rem; /* 36 px */
-    line-height: 2.75rem; /* 44px */
-  }
 }
 
 /*  Font Weights */

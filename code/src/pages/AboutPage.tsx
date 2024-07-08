@@ -31,7 +31,7 @@ const contactList = [
 
 export const AboutPage = () => {
   return (
-    <div className="sm:p-2 sm:py-12">
+    <div className="sm:px-2 pb-24 pt-12 lgx:flex lgx:flex-col lgx:gap-12">
       <ArticleCard
         articleImg={iwonaPortrait}
         featuredHeading="IWONA STROJWAS"
@@ -47,11 +47,12 @@ export const AboutPage = () => {
         fokus på både inre individuella processer och yttre sammanhang, relationer, nätverk,
         arbetssituation mm."
         paragraph4="Förutom svenska kan jag erbjuda samtal på engelska och polska som är mitt modersmål."
-        headingPosition="bottom-0 right-0"
+        headingPosition="lgx:right-36 xl:-bottom-2 xl:right-44 2xl:right-52 sx:max-w-48 sm:-bottom-10"
         gridColumns="grid-leftLarge"
+        columnDirection="column-reverse"
         imgSize="xl:h-4/6 lg:h-80 lg:max-w-72" />
-      <section className="flex flex-col xl:items-center lg:px-3">
-        <div className="xl:grid xl:grid-cols-2 xl:max-w-[70%] flex flex-col-reverse xl:items-center lg:items-start gap-8">
+      <section className="flex flex-col sx:items-center lgx:h-[70vh] sm:px-3">
+        <div className="xl:grid xl:grid-cols-2 lgx:w-[90%] xl:max-w-[70%] flex flex-col-reverse xl:items-center lg:items-start gap-8">
           <div className="flex flex-col gap-8">
             <div>
               <Heading level={4} weight="bold">

@@ -10,7 +10,11 @@
   position: relative;
 }
 
-.card--grid-leftLarge {
+.card--column {
+  flex-direction: column;
+}
+
+.card--column-reverse {
   flex-direction: column-reverse;
 }
 
@@ -25,7 +29,7 @@
 
 @media (min-width: 767px) and (max-width: 1280px) {
   .section {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +49,11 @@
   }
 
   .card--grid-leftLarge {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .card--grid-rightLarge {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
 }

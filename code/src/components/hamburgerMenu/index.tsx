@@ -19,6 +19,8 @@ export const HamburgerMenu = () => {
   const onAnchorClick = () => {
     setAnchorClick(true)
     setToggleSidebar(!toggleSideBar)
+    
+    document.body.classList.remove('no-scroll');
 
     setTimeout(() => {
       setAnchorClick(false)

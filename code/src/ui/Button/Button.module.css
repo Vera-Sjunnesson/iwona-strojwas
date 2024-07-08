@@ -2,7 +2,6 @@
   background-color: var(--color-background-inverted);
   color: var(--color-text-default);
   align-items: center;
-  border-radius: 1.188rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -17,16 +16,18 @@
 */
 
 .btn--medium {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5rem;
   padding: 1rem 2.625rem;
+  border-radius: 1.188rem;
 }
 
 .btn--small {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.25rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 2.625rem;
+  border-radius:0.938rem;
 }

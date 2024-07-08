@@ -255,7 +255,7 @@
     font-size: 1.6em;
     position: relative;
     padding-bottom: 7px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Inter", sans-serif;
   }
   
   .sidebar-anchor:before {
