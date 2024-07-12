@@ -1,4 +1,5 @@
-import { Heading, Text } from '../Typography'
+import { PhotoTag } from '../../components/photoTag'
+import { Heading, Text, TextColor } from '../Typography'
 import CardStyles from './Card.module.css'
 
 export type gridColumns =
@@ -14,12 +15,16 @@ interface Props {
   paragraph2?: string
   paragraph3?: string
   paragraph4?: string
-  key?: number,
+  keyTag?: number,
   className?: string
   headingPosition?: string
   gridColumns?: gridColumns
   columnDirection?: 'column' | 'column-reverse'
   imgSize?: string
+  photoTagColor?: TextColor
+  photographerName?: string
+  website?: boolean
+  isTagPositionLeft?: boolean
 }
 
 export const ArticleCard = ({
@@ -30,12 +35,16 @@ export const ArticleCard = ({
   paragraph2,
   paragraph3,
   paragraph4,
-  key,
+  keyTag,
   className,
   headingPosition,
   gridColumns = "grid-default",
   columnDirection = "column",
-  imgSize = "w-full xl:h-full lg:h-96"
+  imgSize = "w-full xl:h-full lg:h-96",
+  photoTagColor = "default",
+  photographerName,
+  website,
+  isTagPositionLeft,
 }: Props) => {
 
   const sectionClasses = [CardStyles['section']]
@@ -60,7 +69,7 @@ export const ArticleCard = ({
   }
 
   return (
-    <section key={key} className={sectionClasses.join(' ')}>
+    <section key={keyTag} className={sectionClasses.join(' ')}>
       <article className={cardClasses.join(' ')}>
         <section className={cardSectionClasses.join(' ')}>
           <Heading level={4} weight="bold">
@@ -86,7 +95,14 @@ export const ArticleCard = ({
           )}
         </section>
         <div className="sm:relative">
-          <img src={articleImg} className={`object-cover ${imgSize}`} />
+          <div className="relative h-full">
+            <img src={articleImg} className={`object-cover ${imgSize}`} />
+            <PhotoTag
+              color={photoTagColor}
+              photographerName={photographerName}
+              isPositionLeft={isTagPositionLeft}
+              website={website} /> 
+          </div>
           <Heading className={headingClasses.join(' ')} color="tertiary">
             {featuredHeading}
           </Heading>

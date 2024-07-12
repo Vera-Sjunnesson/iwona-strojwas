@@ -21,14 +21,20 @@ export const HeroPage = () => {
           featuredHeading={item.featuredHeading}
           paragraph1={item.paragraph1}
           paragraph2={item.paragraph2}
-          key={item.id}
+          keyTag={item.id}
           className={item.style}
           headingPosition={item.headingPosition}
-          gridColumns={item.grid} />
+          gridColumns={item.grid}
+          photoTagColor={item.photoTagColor}
+          photographerName={item.photographerName}
+          isTagPositionLeft={item.isTagPositionLeft} />
       ))}
       <QuoteSection 
         quoteText="Livet är i ständig förändring och kan utmana oss, det är mänskligt att känna oro, ångest eller hamna i en existentiell kris."
-        quoteImage={quoteImage1} />
+        quoteImage={quoteImage1}
+        photoTagColor="default"
+        website={true}
+        photographerName="matsbergquist.com" />
       {articleSection2.map(item => (
         <ArticleCard
           articleImg={item.img}
@@ -36,16 +42,21 @@ export const HeroPage = () => {
           featuredHeading={item.featuredHeading}
           paragraph1={item.paragraph1}
           paragraph2={item.paragraph2}
-          key={item.id} 
+          keyTag={item.id} 
           className={item.style}
           headingPosition={item.headingPosition}
-          gridColumns={item.grid} />
+          gridColumns={item.grid}
+          photoTagColor={item.photoTagColor}
+          photographerName={item.photographerName}
+          isTagPositionLeft={item.isTagPositionLeft} />
       ))}
       <SimpleCloud />
       <QuoteSection
         quoteText="Familjen är hjärtat av vårt välbefinnande. Genom familjeterapi eller rådgivning erbjuder jag en bro till ökad förståelse och bättre relationer inom familjen."
         quoteImage={quoteImage2}
-        topPosition="sx:top-24 sm:top-4" />
+        topPosition="sx:top-24 sm:top-4"
+        photoTagColor="inverted"
+        photographerName="Foto: Annie Spratt" />
       {articleSection3.map(item => (
         <ArticleCard
           articleImg={item.img}
@@ -53,10 +64,14 @@ export const HeroPage = () => {
           featuredHeading={item.featuredHeading}
           paragraph1={item.paragraph1}
           paragraph2={item.paragraph2}
-          key={item.id} 
+          keyTag={item.id} 
           className={item.style}
           headingPosition={item.headingPosition}
-          gridColumns={item.grid} />
+          gridColumns={item.grid}
+          photoTagColor={item.photoTagColor}
+          photographerName={item.photographerName}
+          website={item.website}
+          isTagPositionLeft={item.isTagPositionLeft} />
       ))}
     </>
   )

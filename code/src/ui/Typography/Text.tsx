@@ -8,6 +8,7 @@ export type TextColor =
   | 'tertiary'
   | 'strong'
   | 'responsive'
+  | 'inverted'
 
 type Props = {
   children: ReactNode

@@ -5,7 +5,7 @@ const positionArray = ['flex-start', 'flex-center', 'flex-end']
 
 export const SimpleCloud = () => {
   return (
-    <div className="w-full min-h-[580px] h-100vh flex justify-center items-start xl:items-center lg:py-20">
+    <div className="w-full min-h-[580px] flex justify-center items-start xl:items-center lg:py-20">
       <section
         className="h-3/5 w-full xl:w-3/5 flex flex-wrap justify-center">
         {wordData.map(item => {

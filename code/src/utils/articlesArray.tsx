@@ -1,8 +1,9 @@
-import articleImg1 from "../assets/boat.jpg"
+import articleImg1 from "../assets/karl-gabor-kampong-luong-cambodia.jpg"
 import articleImg2 from "../assets/mountains.jpg"
 import articleImg3 from "../assets/maze.jpg"
 import articleImg4 from "../assets/tree.jpg"
 import articleImg5 from "../assets/art1.jpg"
+import { TextColor } from "../ui/Typography"
 
 export type gridColumns =
   | 'grid-default'
@@ -10,16 +11,20 @@ export type gridColumns =
   | 'grid-rightLarge'
 
   interface Article {
-    id: number;
-    img: string;
-    alt: string;
-    heading: string;
-    featuredHeading: string;
-    paragraph1: string;
-    paragraph2: string;
-    style: string;
-    headingPosition: string;
-    grid: gridColumns;
+    id: number,
+    img: string,
+    alt: string,
+    heading: string,
+    featuredHeading: string,
+    paragraph1: string,
+    paragraph2: string,
+    style: string,
+    headingPosition: string,
+    grid: gridColumns,
+    photoTagColor: TextColor,
+    photographerName?: string,
+    website?: boolean,
+    isTagPositionLeft?: boolean,
   }
 
 export const articlesContent: Article[]  = [
@@ -33,7 +38,9 @@ export const articlesContent: Article[]  = [
     "paragraph2": "Söker du vägar för att bättre förstå dig själv, utforska dina känslor och kommunikation till andra eller förstå hur dina egna familjemönster påverkar dig Individuell terapi är skräddarsytt för att möta just dina behov. Tillsammans utforskar vi dina känslor och tankar, relationer till andra eller familjemönster från din uppväxt och ger dig de strategier du behöver för att möta livets utmaningar med ny styrka.",
     "style": "sx:justify-start sx:order-none",
     "headingPosition": "sx:right-12 sx:-bottom-16 sm:bottom-4 sm:left-4",
-    "grid": "grid-default"
+    "grid": "grid-default",
+    "photoTagColor": "inverted",
+    "photographerName": "Foto: Karl Gabor"
   },
   {
     "id": 2,
@@ -45,7 +52,10 @@ export const articlesContent: Article[]  = [
     "paragraph2": "Mina terapitjänster erbjuder en stödjande miljö där du kan bearbeta din sorg, lära dig att leva med din förlust, och hitta vägar att återigen hitta mening och glädje i livet. För de som har upplevt trauma kan vägen till återhämtning kännas särskilt svår och ensam. Jag är här för att ge dig det stöd och de verktyg du behöver för att bearbeta traumatiska händelser, övervinna de känslor av rädsla eller hjälplöshet som kan ha följt med, och återbygga en känsla av säkerhet och hopp.",
     "style": "sx:justify-end sx:order-1",
     "headingPosition": "sx:left-1 sx:-top-20 sm:top-0 sm:left-4",
-    "grid": "grid-leftLarge"
+    "grid": "grid-leftLarge",
+    "photoTagColor": "inverted",
+    "photographerName": "Foto: Karl Gabor",
+    "isTagPositionLeft": true
   },
   {
     "id": 3,
@@ -57,7 +67,9 @@ export const articlesContent: Article[]  = [
     "paragraph2": "",
     "style": "sx:justify-center sx:order-none",
     "headingPosition": "sx:right-1 sx:-top-16 sm:-top-2 sm:right-1",
-    "grid": "grid-rightLarge"
+    "grid": "grid-rightLarge",
+    "photoTagColor": "default",
+    "photographerName": "Foto: Ashley Batz"
   },
   {
     "id": 4,
@@ -69,7 +81,10 @@ export const articlesContent: Article[]  = [
     "paragraph2": "",
     "style": "sx:justify-end sx:order-1",
     "headingPosition": "sx:right-32 lgx:left-60 sx:top-3 sm:top-0 sm:right-2",
-    "grid": "grid-leftLarge"
+    "grid": "grid-leftLarge",
+    "photoTagColor": "inverted",
+    "photographerName": "Foto: Amal Ben Saad",
+    "isTagPositionLeft": true
   },
   {
     "id": 5,
@@ -81,24 +96,9 @@ export const articlesContent: Article[]  = [
     "paragraph2": "",
     "style": "sx:justify-start sx:order-none",
     "headingPosition": "sx:left-52 lgx:left-96 sx:bottom-0 sm:-bottom-3 sm:right-3",
-    "grid": "grid-rightLarge"
-  }
-]
-
-export const menuItems = [
-  {
-    id: 1,
-    title: "Hem",
-    to: "/"
-  },
-  {
-    id: 2,
-    title: "Om mig",
-    to: "/om"
-  },
-  {
-    id: 3,
-    title: "Psykoterapi online",
-    to: "/psykoterapi-online",
+    "grid": "grid-rightLarge",
+    "photoTagColor": "default",
+    "photographerName": "matsbergquist.com",
+    "website": true
   }
 ]

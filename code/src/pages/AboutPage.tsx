@@ -1,16 +1,6 @@
 import iwonaPortrait from "../assets/iwona-strojwas.jpg"
 import { ArticleCard } from "../ui/Card/Card"
-import { Heading } from "../ui/Typography";
-
-const servicesList = [
-  { id: 1, text: "Gratis konsultation, 20 min." },
-  { id: 2, text: "Individuell psykoterapi, 45–60 min" },
-  { id: 3, text: "Familjeterapi, 60–90 min" },
-  { id: 4, text: "Parterapi, 60–90 min" },
-  { id: 5, text: "Föräldrarådgivning 45-60-90 min" },
-  { id: 6, text: "Rådgivning 30-45-60 min" },
-  { id: 8, text: "Pris, från 1100. Ej högkostnadsskydd eller frikort." },
-];
+import { Heading } from "../ui/Typography"
 
 const educationList = [
   { id: 1, text: "Psykoterapeutprogrammet, inriktning systemisk familjeterapi Linköpings Universitet" },
@@ -21,13 +11,7 @@ const educationList = [
   { id: 6, text: "Fördjupningskurs i transkulturell psykiatri / Transkulturell Centrum" },
   { id: 8, text: "Bedömning och behandling av barn och tonåringar med autismspektrumstörningar Utbildningsenheten SLL." },
   { id: 9, text: "Orienteringskurs i KBT och KP med barn och ungdomar, Utbildningsenhet SLL" },
-];
-
-const contactList = [
-  { id: 1, text: "För att boka samtal behöver du bank-id. Videolänken fungerar även i mobilen." },
-  { id: 2, text: "Boka samtal: Fyll i formuläret nedan, jag kontaktar dig inom 48 timmar." },
-  { id: 3, text: "Du som har pågående kontakt, logga in i samtalsrummet." },
-];
+]
 
 export const AboutPage = () => {
   return (
@@ -53,32 +37,6 @@ export const AboutPage = () => {
         imgSize="xl:h-4/6 lg:h-80 lg:max-w-72" />
       <section className="flex flex-col sx:items-center xl:-[100vh] lgx:h-[70vh] sm:px-3 lgx:pb-24">
         <div className="xl:grid xl:grid-cols-2 lgx:w-[90%] xl:max-w-[70%] flex flex-col-reverse xl:items-center lg:items-start gap-8">
-          <div className="flex flex-col gap-8">
-            <div>
-              <Heading level={4} weight="bold">
-                Tjänster
-              </Heading>
-              <ul className="list-disc">
-                {servicesList.map(item => (
-                  <li key={item.id} className="ml-6 mb-3 pl-1.5">
-                    {item.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <Heading level={4} weight="bold">
-                Kontakt
-              </Heading>
-              <ul>
-                {contactList.map(item => (
-                  <li key={item.id} className="mb-3">
-                    {item.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
           <div>
               <Heading level={4} weight="bold">
                 Utbildningar i urval

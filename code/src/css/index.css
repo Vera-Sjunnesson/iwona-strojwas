@@ -23,6 +23,7 @@
   --color-text-secondary: #A8E3EB;
   --color-text-tertiary: #BE665A;
   --color-text-strong: #5AB2BE;
+  --color-text-inverted: #ffffff;
 
   /* Heading */
   --color-heading-default: #222222;
@@ -43,7 +44,7 @@ body {
 }
 
 a {
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-text-default);
   text-decoration: none;
 }

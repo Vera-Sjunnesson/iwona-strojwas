@@ -15,6 +15,10 @@
   color: var(--color-text-default);
 }
 
+.typography-text--ineverted {
+  color: var(--color-text-inverted);
+}
+
 .typography-text--secondary {
   color: var(--color-text-secondary);
 }

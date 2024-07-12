@@ -6,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-background': "url('./src/assets/239884819_1409526429430543_3468945226487686512_n.jpg')",
-      },
       colors: {
         'white': 'var(--color-background-default)',
         'blue': '#A8E3EB',
@@ -20,6 +17,9 @@ module.exports = {
         'gray-dark': '#273444',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
+      },
+      boxShadow: {
+        "sm": "0 5px 5px 0 rgb(34 34 34 / 0.1)"
       },
       // Media queries reference points
       screens: {

@@ -566,6 +566,10 @@ video {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .bottom-20 {
   bottom: 5rem;
 }
@@ -574,12 +578,20 @@ video {
   left: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
 
 .top-20 {
   top: 5rem;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-50 {
@@ -630,12 +642,12 @@ video {
   height: auto;
 }
 
-.h-\[51\.625rem\] {
-  height: 51.625rem;
-}
-
 .h-full {
   height: 100%;
+}
+
+.min-h-\[51\.625rem\] {
+  min-height: 51.625rem;
 }
 
 .min-h-\[580px\] {
@@ -645,14 +657,6 @@ video {
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
-}
-
-.min-h-\[826px\] {
-  min-height: 826px;
-}
-
-.min-h-\[51\.625rem\] {
-  min-height: 51.625rem;
 }
 
 .w-12 {
@@ -731,9 +735,17 @@ video {
   background-position: right top;
 }
 
+.bg-left-top {
+  background-position: left top;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-3 {
@@ -766,8 +778,22 @@ video {
   text-align: center;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .italic {
   font-style: italic;
+}
+
+.text-white {
+  color: var(--color-background-default);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 5px 5px 0 rgb(34 34 34 / 0.1);
+  --tw-shadow-colored: 0 5px 5px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 :root {
@@ -786,6 +812,7 @@ video {
   --color-text-secondary: #A8E3EB;
   --color-text-tertiary: #BE665A;
   --color-text-strong: #5AB2BE;
+  --color-text-inverted: #ffffff;
   /* Heading */
   --color-heading-default: #222222;
   --color-heading-secondary: #A8E3EB;
@@ -804,7 +831,7 @@ body {
 }
 
 a {
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-text-default);
   text-decoration: none;
 }
@@ -1016,16 +1043,12 @@ body.no-scroll {
     height: 66.666667%;
   }
 
-  .xl\:h-full {
-    height: 100%;
-  }
-
-  .xl\:h-screen {
-    height: 100vh;
-  }
-
   .xl\:h-\[100vh\] {
     height: 100vh;
+  }
+
+  .xl\:h-full {
+    height: 100%;
   }
 
   .xl\:min-h-\[580px\] {
@@ -1087,10 +1110,6 @@ body.no-scroll {
 
   .lgx\:flex-col {
     flex-direction: column;
-  }
-
-  .lgx\:gap-12 {
-    gap: 3rem;
   }
 
   .lgx\:px-12 {
