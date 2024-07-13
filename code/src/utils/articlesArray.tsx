@@ -37,7 +37,7 @@ export const articlesContent: Article[]  = [
     "paragraph1": "Som leg. psykoterapeut med utbildning inom systemisk familjeterapi och psykodynamisk terapi och lång erfarenhet från samtal med par, familjer, vuxna, ungdomar och barn kan jag hjälpa dig med dina utmaningar i livet.",
     "paragraph2": "Söker du vägar för att bättre förstå dig själv, utforska dina känslor och kommunikation till andra eller förstå hur dina egna familjemönster påverkar dig Individuell terapi är skräddarsytt för att möta just dina behov. Tillsammans utforskar vi dina känslor och tankar, relationer till andra eller familjemönster från din uppväxt och ger dig de strategier du behöver för att möta livets utmaningar med ny styrka.",
     "style": "sx:justify-start sx:order-none",
-    "headingPosition": "right-12 bottom-16",
+    "headingPosition": "right-12 bottom-8",
     "grid": "grid-default",
     "photoTagColor": "inverted",
     "photographerName": "Foto: Karl Gabor"
