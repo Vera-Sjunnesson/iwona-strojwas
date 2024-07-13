@@ -36,7 +36,7 @@ export const ArticleCard = ({
   headingPosition,
   gridColumns = "grid-default",
   columnDirection = "column",
-  imgSize = "w-full xl:h-full lg:h-96",
+  imgSize = "w-full sx:h-full sm:h-96",
   photoTagColor = "default",
   photographerName,
   website,
@@ -68,7 +68,7 @@ export const ArticleCard = ({
     <section key={keyTag} className={sectionClasses.join(' ')}>
       <article className={cardClasses.join(' ')}>
         <section className={cardSectionClasses.join(' ')}>
-          <Heading className="sx:hidden" color="tertiary">
+          <Heading className="xl:hidden mb-3 break-words hyphens-manual" color="tertiary">
             {featuredHeading}
           </Heading>
           <Heading
