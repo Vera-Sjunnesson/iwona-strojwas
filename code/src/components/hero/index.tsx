@@ -14,7 +14,7 @@ export const HeroSection = () => {
        <PhotoTag
         color="inverted"
         photographerName="Foto: Karl Gabor"/> 
-      <article className="absolute xl:left-20 xl:bottom-20 lg:left-0 lg:bottom-0 flex flex-col lg:py-10 sm:px-3 lgx:px-12 lgx:py-12 max-w-lg">
+      <article className="absolute xl:left-20 xl:bottom-20 lg:left-0 lg:bottom-0 flex flex-col lg:py-10 sm:px-4 lgx:px-12 lgx:py-12 max-w-lg">
         <Heading
           color="secondary"
           className="mb-3">
