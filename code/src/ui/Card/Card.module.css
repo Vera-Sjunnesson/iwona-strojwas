@@ -24,7 +24,14 @@
 }
 
 .featured-heading {
-  position: absolute;
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .featured-heading {
+    position: absolute;
+    display: block;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1280px) {

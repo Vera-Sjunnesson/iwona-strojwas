@@ -13,8 +13,6 @@ interface Props {
   featuredHeading?: string
   paragraph1: string
   paragraph2?: string
-  paragraph3?: string
-  paragraph4?: string
   keyTag?: number,
   className?: string
   headingPosition?: string
@@ -33,8 +31,6 @@ export const ArticleCard = ({
   featuredHeading,
   paragraph1,
   paragraph2,
-  paragraph3,
-  paragraph4,
   keyTag,
   className,
   headingPosition,
@@ -72,6 +68,9 @@ export const ArticleCard = ({
     <section key={keyTag} className={sectionClasses.join(' ')}>
       <article className={cardClasses.join(' ')}>
         <section className={cardSectionClasses.join(' ')}>
+          <Heading className="sx:hidden" color="tertiary">
+            {featuredHeading}
+          </Heading>
           <Heading
             level={4}
             weight="bold"
@@ -84,16 +83,6 @@ export const ArticleCard = ({
           {paragraph2 && (
             <Text level={2} className="mt-4">
               {paragraph2}
-            </Text>
-          )}
-          {paragraph3 && (
-            <Text level={2} className="mt-4">
-              {paragraph3}
-            </Text>
-          )}
-          {paragraph4 && (
-            <Text level={2} className="mt-4">
-              {paragraph4}
             </Text>
           )}
         </section>
