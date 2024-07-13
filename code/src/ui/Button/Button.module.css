@@ -1,6 +1,4 @@
 .btn {
-  background-color: var(--color-background-inverted);
-  color: var(--color-text-default);
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -11,6 +9,18 @@
   align-self: center;
   box-shadow: 0 5px 5px 0px rgba(34,34,34,0.1);
 
+}
+
+/* Button variants */
+
+.btn--primary {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-default);
+}
+
+.btn--secondary {
+  background-color: var(--color-background-tertiary);
+  color: var(--color-text-inverted);
 }
 
 /*

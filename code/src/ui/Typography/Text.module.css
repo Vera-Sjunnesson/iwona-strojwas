@@ -32,13 +32,13 @@
 }
 
 .typography-text--responsive {
-  color: var(--color-heading-secondary);
+  color: var(--color-heading-tertiary);
 }
 
 @media (min-width: 1280px) {
 
   .typography-text--responsive {
-    color: var(--color-heading-tertiary);
+    color: var(--color-heading-secondary);
   }
 }
 

@@ -33,10 +33,8 @@
 
   /* Background */
   --color-background-default: #ffffff;
-  --color-background-float: #e2e2e2;
-  --color-background-inline: #f1f1f1;
-  --color-background-inverted: #A8E3EB;
-  --color-background-multiply: #595959;
+  --color-background-secondary: #A8E3EB;
+  --color-background-tertiary: #be665a;
 }
 
 body {
@@ -44,13 +42,16 @@ body {
 }
 
 a {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   color: var(--color-text-default);
   text-decoration: none;
 }
 
-a:hover {
-  color: #CB4A4A;
+@media (min-width: 1280px) {
+  a:hover {
+    color: #CB4A4A;
+  }
 }
 
 h1, h2, h3, h5, h6 {

@@ -15,7 +15,9 @@ export const HeroSection = () => {
         color="inverted"
         photographerName="Foto: Karl Gabor"/> 
       <article className="absolute xl:left-20 xl:bottom-20 lg:left-0 lg:bottom-0 flex flex-col lg:py-6 sm:px-3 lgx:px-12 lgx:py-12 max-w-lg">
-        <Heading color="secondary" className="mb-3">
+        <Heading
+          color="secondary"
+          className="mb-3">
           DITT INRE VÄLMÅENDE
         </Heading>
         <Text color="secondary" level={2} weight="medium">

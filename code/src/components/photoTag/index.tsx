@@ -13,7 +13,7 @@ export const PhotoTag = ({photographerName, color, website = false, isPositionLe
     {website
       ? (
         <Text
-          level={2}
+          level={3}
           color={color}
           fontStyle="italic"
           className="absolute bottom-0 right-0 z-40 text-white italic p-1">
@@ -28,7 +28,7 @@ export const PhotoTag = ({photographerName, color, website = false, isPositionLe
         </Text>
       ):(
         <Text
-        level={2}
+        level={3}
         color={color}
         fontStyle="italic"
         className={

@@ -72,7 +72,10 @@ export const ArticleCard = ({
     <section key={keyTag} className={sectionClasses.join(' ')}>
       <article className={cardClasses.join(' ')}>
         <section className={cardSectionClasses.join(' ')}>
-          <Heading level={4} weight="bold">
+          <Heading
+            level={4}
+            weight="bold"
+            className="mb-3">
             {heading}
           </Heading>
           <Text level={2}>
