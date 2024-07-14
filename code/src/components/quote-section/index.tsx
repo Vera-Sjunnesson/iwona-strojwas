@@ -21,7 +21,7 @@ export const QuoteSection = ({
   website
 }: Props) => {
   return (
-    <div className="relative h-auto min-h-fit">
+    <div className="relative h-auto min-h-fit sm:my-20">
       <div
         style={{ backgroundImage: `url(${quoteImage})` }} 
         className="min-h-[580px] h-[100vh] bg-cover bg-center" />

@@ -29,7 +29,7 @@ export type gridColumns =
 
 export const articlesContent: Article[]  = [
   {
-    "id": 1,
+    "id": 0,
     "img": articleImg1,
     "alt": "Man i båt",
     "heading": "Vilken hjälp kan du få av mig?",
@@ -43,7 +43,7 @@ export const articlesContent: Article[]  = [
     "photographerName": "Foto: Karl Gabor"
   },
   {
-    "id": 2,
+    "id": 1,
     "img": articleImg2,
     "alt": "Man i båt",
     "heading": "Sorgearbete och trauma",
@@ -51,14 +51,14 @@ export const articlesContent: Article[]  = [
     "paragraph1": "Har du drabbats av förlust och behöver hjälp att hantera sorg? Har du varit med om en traumatisk händelse och behöver hantera det som har hänt. Sorg och trauma kan djupt påverka vårt välbefinnande och vår förmåga att röra oss framåt i livet. Om du har drabbats av en förlust, vare sig det rör sig om en älskad person, en relation, eller något annat betydande i ditt liv, är det viktigt att du vet att det finns stöd och förståelse att få.",
     "paragraph2": "Mina terapitjänster erbjuder en stödjande miljö där du kan bearbeta din sorg, lära dig att leva med din förlust, och hitta vägar att återigen hitta mening och glädje i livet. För de som har upplevt trauma kan vägen till återhämtning kännas särskilt svår och ensam. Jag är här för att ge dig det stöd och de verktyg du behöver för att bearbeta traumatiska händelser, övervinna de känslor av rädsla eller hjälplöshet som kan ha följt med, och återbygga en känsla av säkerhet och hopp.",
     "style": "sx:justify-end sx:order-1",
-    "headingPosition": "left-1 -top-20",
+    "headingPosition": "left-0 -top-20",
     "grid": "grid-leftLarge",
     "photoTagColor": "inverted",
     "photographerName": "Foto: Karl Gabor",
     "isTagPositionLeft": true
   },
   {
-    "id": 3,
+    "id": 2,
     "img": articleImg3,
     "alt": "Man i båt",
     "heading": "Samtal för att hantera oro, ångest, existentiell kris",
@@ -66,13 +66,13 @@ export const articlesContent: Article[]  = [
     "paragraph1": "Livet är i ständig förändring och kan utmana oss, det är mänskligt att känna oro, ångest eller hamna i en existentiell kris. Du behöver inte navigera dessa stormar ensam. Genom våra samtal erbjuder jag en säker plats där du kan utforska och hitta verktyg att hantera dessa känslor. Mitt mål är att samarbeta med dig för att identifiera orsakerna bakom din oro och ångest, för att sedan arbeta igenom dessa med skräddarsydda strategier som återspeglar dina unika behov och livssituation.",
     "paragraph2": "",
     "style": "sx:justify-center sx:order-none",
-    "headingPosition": "right-1 -top-16",
+    "headingPosition": "right-0 top-16",
     "grid": "grid-rightLarge",
     "photoTagColor": "default",
     "photographerName": "Foto: Ashley Batz"
   },
   {
-    "id": 4,
+    "id": 3,
     "img": articleImg4,
     "alt": "Man i båt",
     "heading": "Stärk familjebanden med Familjeterapi",
@@ -87,7 +87,7 @@ export const articlesContent: Article[]  = [
     "isTagPositionLeft": true
   },
   {
-    "id": 5,
+    "id": 4,
     "img": articleImg5,
     "alt": "Man i båt",
     "heading": "Parterapi som förnyar relationen",

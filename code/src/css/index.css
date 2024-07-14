@@ -21,7 +21,7 @@
   /* Text */
   --color-text-default: #222222;
   --color-text-secondary: #A8E3EB;
-  --color-text-tertiary: #BE665A;
+  --color-text-tertiary: #c25849;
   --color-text-strong: #5AB2BE;
   --color-text-inverted: #ffffff;
 
@@ -34,7 +34,7 @@
   /* Background */
   --color-background-default: #ffffff;
   --color-background-secondary: #A8E3EB;
-  --color-background-tertiary: #be665a;
+  --color-background-tertiary: #5AB2BE;
 }
 
 body {
@@ -46,6 +46,11 @@ a {
   font-weight: 400;
   color: var(--color-text-default);
   text-decoration: none;
+}
+
+.artist-website-link {
+  font-family: "Inter Tight", sans-serif;
+  font-style: italic;
 }
 
 @media (min-width: 1280px) {

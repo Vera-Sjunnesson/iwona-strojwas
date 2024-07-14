@@ -31,6 +31,8 @@
   .featured-heading {
     position: absolute;
     display: block;
+    background: var(--color-background-default);
+    padding: 0 10px;
   }
 }
 

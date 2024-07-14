@@ -13,7 +13,6 @@ interface Props {
   featuredHeading?: string
   paragraph1: string
   paragraph2?: string
-  keyTag?: number,
   className?: string
   headingPosition?: string
   gridColumns?: gridColumns
@@ -31,7 +30,6 @@ export const ArticleCard = ({
   featuredHeading,
   paragraph1,
   paragraph2,
-  keyTag,
   className,
   headingPosition,
   gridColumns = "grid-default",
@@ -65,17 +63,19 @@ export const ArticleCard = ({
   }
 
   return (
-    <section key={keyTag} className={sectionClasses.join(' ')}>
+    <section className={sectionClasses.join(' ')}>
       <article className={cardClasses.join(' ')}>
         <section className={cardSectionClasses.join(' ')}>
-          <Heading className="xl:hidden mb-3 break-words hyphens-manual" color="tertiary">
-            {featuredHeading}
-          </Heading>
           <Heading
             level={4}
             weight="bold"
             className="mb-3">
             {heading}
+          </Heading>
+          <Heading
+            className="xl:hidden mb-3 break-words hyphens-manual"
+            color="tertiary">
+            {featuredHeading}
           </Heading>
           <Text level={2}>
             {paragraph1}

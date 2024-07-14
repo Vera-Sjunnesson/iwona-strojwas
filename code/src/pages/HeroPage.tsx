@@ -16,12 +16,12 @@ export const HeroPage = () => {
       <HeroSection />
       {articleSection1.map(item => (
         <ArticleCard
+          key={item.id}
           articleImg={item.img}
           heading={item.heading}
           featuredHeading={item.featuredHeading}
           paragraph1={item.paragraph1}
           paragraph2={item.paragraph2}
-          keyTag={item.id}
           className={item.style}
           headingPosition={item.headingPosition}
           gridColumns={item.grid}
@@ -37,12 +37,12 @@ export const HeroPage = () => {
         photographerName="matsbergquist.com" />
       {articleSection2.map(item => (
         <ArticleCard
+          key={item.id} 
           articleImg={item.img}
           heading={item.heading}
           featuredHeading={item.featuredHeading}
           paragraph1={item.paragraph1}
           paragraph2={item.paragraph2}
-          keyTag={item.id} 
           className={item.style}
           headingPosition={item.headingPosition}
           gridColumns={item.grid}
@@ -54,17 +54,17 @@ export const HeroPage = () => {
       <QuoteSection
         quoteText="Familjen är hjärtat av vårt välbefinnande. Genom familjeterapi eller rådgivning erbjuder jag en bro till ökad förståelse och bättre relationer inom familjen."
         quoteImage={quoteImage2}
-        topPosition="sx:top-24 sm:top-4"
+        topPosition="sx:top-24 sm:top-4 "
         photoTagColor="inverted"
         photographerName="Foto: Annie Spratt" />
       {articleSection3.map(item => (
         <ArticleCard
+          key={item.id} 
           articleImg={item.img}
           heading={item.heading}
           featuredHeading={item.featuredHeading}
           paragraph1={item.paragraph1}
           paragraph2={item.paragraph2}
-          keyTag={item.id} 
           className={item.style}
           headingPosition={item.headingPosition}
           gridColumns={item.grid}

@@ -22,7 +22,8 @@ export const PhotoTag = ({photographerName, color, website = false, isPositionLe
               href="http://www.matsbergquist.com"
               target="_blank"
               rel="noreferrer"
-              aria-label="Mats Bergquist website">
+              aria-label="Mats Bergquist website"
+              className="artist-website-link">
               {photographerName}
             </a>
         </Text>

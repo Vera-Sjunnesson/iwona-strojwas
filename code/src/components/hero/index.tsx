@@ -12,7 +12,7 @@ export const HeroSection = () => {
         }} 
         className="lg:min-h-[400px] xl:min-h-[580px] h-[100vh] bg-cover bg-left-top" />
        <PhotoTag
-        color="inverted"
+        color="secondary"
         photographerName="Foto: Karl Gabor"/> 
       <article className="absolute xl:left-20 xl:bottom-20 lg:left-0 lg:bottom-0 flex flex-col lg:py-10 sm:px-4 lgx:px-12 lgx:py-12 max-w-lg">
         <Heading

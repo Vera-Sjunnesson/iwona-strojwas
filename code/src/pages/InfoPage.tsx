@@ -27,13 +27,13 @@ export const InfoPage = () => {
       <div className="relative h-full">
         <div style={{ backgroundImage: `url(${climbingImg1})` }} className="h-full bg-cover bg-right-top lg:hidden" />
         <div style={{ backgroundImage: `url(${climbingImg2})` }} className="h-full bg-cover bg-left-top xl:hidden" />
-        <div
+{/*         <div
           style={{
             backgroundImage: "linear-gradient(180deg, rgb(255 255 255 / 70%) 30%, rgba(34, 34, 34, 0) 65%)"
           }}
-          className="xl:hidden lg:block w-full h-full absolute top-0 left-0 bg-cover bg-right-top" />
+          className="xl:hidden lg:block w-full h-full absolute top-0 left-0 bg-cover bg-right-top" /> */}
         <PhotoTag
-          color="inverted"
+          color="secondary"
           photographerName="Foto: Willian Justen de Vasconcellos" />
         <article className="lg:absolute lg:flex lg:flex-col gap-3 sm:mb-16 top-20 left-0">
           <section className="xl:absolute xl:left-20 top-20 sx:mx-auto flex flex-col xl:py-6 px-4 sx:max-w-lg">
@@ -42,7 +42,7 @@ export const InfoPage = () => {
               className="mb-3">
               PSYKOTERAPI ONLINE
             </Heading>
-            <Text color="strong" level={2} weight="medium">
+            <Text level={2} weight="medium">
               Livet kan vara hektiskt och att det inte alltid är lätt att ta sig tid för terapi. Du bor kanske långt bort från någon mottagning vilket gör det svårt för dig att få terapi när du behöver det.
             </Text>
           </section>
@@ -80,7 +80,7 @@ export const InfoPage = () => {
         <Heading
          level={4}
          weight="bold"
-         className="mb-3">
+         className="mb-3 hover:text-black">
           Kontakt
         </Heading>
         <ul>

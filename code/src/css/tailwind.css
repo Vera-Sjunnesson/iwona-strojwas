@@ -566,6 +566,14 @@ video {
   position: relative;
 }
 
+.-top-16 {
+  top: -4rem;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -574,12 +582,36 @@ video {
   bottom: 5rem;
 }
 
+.bottom-8 {
+  bottom: 2rem;
+}
+
 .left-0 {
   left: 0px;
 }
 
+.left-1 {
+  left: 0.25rem;
+}
+
+.left-52 {
+  left: 13rem;
+}
+
 .right-0 {
   right: 0px;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.right-32 {
+  right: 8rem;
 }
 
 .top-0 {
@@ -590,52 +622,12 @@ video {
   top: 5rem;
 }
 
-.-bottom-16 {
-  bottom: -4rem;
-}
-
-.right-12 {
-  right: 3rem;
-}
-
-.-top-20 {
-  top: -5rem;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.-top-16 {
-  top: -4rem;
-}
-
-.right-1 {
-  right: 0.25rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.right-32 {
-  right: 8rem;
-}
-
 .top-3 {
   top: 0.75rem;
 }
 
-.left-52 {
-  left: 13rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-8 {
-  bottom: 2rem;
+.top-16 {
+  top: 4rem;
 }
 
 .z-40 {
@@ -792,11 +784,6 @@ video {
           hyphens: manual;
 }
 
-.hyphens-auto {
-  -webkit-hyphens: auto;
-          hyphens: auto;
-}
-
 .break-words {
   overflow-wrap: break-word;
 }
@@ -892,7 +879,7 @@ video {
   /* Text */
   --color-text-default: #222222;
   --color-text-secondary: #A8E3EB;
-  --color-text-tertiary: #BE665A;
+  --color-text-tertiary: #c25849;
   --color-text-strong: #5AB2BE;
   --color-text-inverted: #ffffff;
   /* Heading */
@@ -903,7 +890,7 @@ video {
   /* Background */
   --color-background-default: #ffffff;
   --color-background-secondary: #A8E3EB;
-  --color-background-tertiary: #be665a;
+  --color-background-tertiary: #5AB2BE;
 }
 
 body {
@@ -915,6 +902,11 @@ a {
   font-weight: 400;
   color: var(--color-text-default);
   text-decoration: none;
+}
+
+.artist-website-link {
+  font-family: "Inter Tight", sans-serif;
+  font-style: italic;
 }
 
 @media (min-width: 1280px) {
@@ -977,45 +969,23 @@ body.no-scroll {
   }
 }
 
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 @media (max-width: 767px) {
   .sm\:relative {
     position: relative;
   }
 
-  .sm\:-bottom-3 {
-    bottom: -0.75rem;
-  }
-
-  .sm\:-top-2 {
-    top: -0.5rem;
-  }
-
-  .sm\:bottom-4 {
-    bottom: 1rem;
-  }
-
-  .sm\:left-4 {
-    left: 1rem;
-  }
-
-  .sm\:right-1 {
-    right: 0.25rem;
-  }
-
-  .sm\:right-2 {
-    right: 0.5rem;
-  }
-
-  .sm\:right-3 {
-    right: 0.75rem;
-  }
-
-  .sm\:top-0 {
-    top: 0px;
-  }
-
   .sm\:top-4 {
     top: 1rem;
+  }
+
+  .sm\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .sm\:mb-16 {
@@ -1034,14 +1004,14 @@ body.no-scroll {
     width: 90%;
   }
 
-  .sm\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .sm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .sm\:pl-2 {
@@ -1074,10 +1044,6 @@ body.no-scroll {
     display: none;
   }
 
-  .lg\:h-96 {
-    height: 24rem;
-  }
-
   .lg\:min-h-\[400px\] {
     min-height: 400px;
   }
@@ -1086,19 +1052,14 @@ body.no-scroll {
     flex-direction: column;
   }
 
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .lg\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -1125,14 +1086,6 @@ body.no-scroll {
 
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:h-full {
-    height: 100%;
-  }
-
-  .xl\:max-h-\[500px\] {
-    max-height: 500px;
   }
 
   .xl\:min-h-\[580px\] {
@@ -1186,14 +1139,6 @@ body.no-scroll {
 }
 
 @media (min-width: 767px) and (max-width: 1279px) {
-  .lgx\:left-60 {
-    left: 15rem;
-  }
-
-  .lgx\:left-96 {
-    left: 24rem;
-  }
-
   .lgx\:gap-16 {
     gap: 4rem;
   }
@@ -1220,52 +1165,12 @@ body.no-scroll {
 }
 
 @media (min-width: 768px) {
-  .sx\:-bottom-16 {
-    bottom: -4rem;
-  }
-
-  .sx\:-top-16 {
-    top: -4rem;
-  }
-
-  .sx\:-top-20 {
-    top: -5rem;
-  }
-
-  .sx\:bottom-0 {
-    bottom: 0px;
-  }
-
-  .sx\:left-1 {
-    left: 0.25rem;
-  }
-
-  .sx\:left-52 {
-    left: 13rem;
-  }
-
-  .sx\:right-1 {
-    right: 0.25rem;
-  }
-
-  .sx\:right-12 {
-    right: 3rem;
-  }
-
-  .sx\:right-32 {
-    right: 8rem;
-  }
-
   .sx\:top-10 {
     top: 2.5rem;
   }
 
   .sx\:top-24 {
     top: 6rem;
-  }
-
-  .sx\:top-3 {
-    top: 0.75rem;
   }
 
   .sx\:order-1 {
@@ -1283,10 +1188,6 @@ body.no-scroll {
 
   .sx\:grid {
     display: grid;
-  }
-
-  .sx\:hidden {
-    display: none;
   }
 
   .sx\:h-\[30rem\] {
