@@ -54,7 +54,7 @@ export const articlesContent: Article[]  = [
     "headingPosition": "left-0 -top-20",
     "grid": "grid-leftLarge",
     "photoTagColor": "inverted",
-    "photographerName": "Foto: Karl Gabor",
+    "photographerName": "Foto: Pfüderi / Pixabay",
     "isTagPositionLeft": true
   },
   {
