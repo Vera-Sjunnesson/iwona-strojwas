@@ -48,7 +48,7 @@ export const InfoPage = () => {
           </section>
           <section className="xl:absolute xl:right-20 bottom-20 sx:mx-auto flex flex-col xl:py-6 px-4 sx:max-w-lg">
             <Text color="responsive" level={2} weight="medium">
-              Därför erbjuder jag psykoterapi online och rådgivning som gör det möjligt för dig att få stöd var och när det passar dig bäst med samma engagemang och professionalism som i personliga möten och flexibla tider.  Samtalen sker genom en videolänk som skickas till dig vid bokning. Du behöver mobil eller dator, internetuppkoppling och BankID för att logga in. Videotjänsten är säker och skyddad. Tiden bokar du genom att fylla formuläret nedan.
+              Därför erbjuder jag psykoterapi online och rådgivning som gör det möjligt för dig att få stöd var och när det passar dig bäst med samma engagemang och professionalism som i personliga möten och flexibla tider. Samtalen sker genom en videolänk som skickas till dig vid bokning. Du behöver mobil eller dator, internetuppkoppling och BankID för att logga in. Videotjänsten är säker och skyddad. Tiden bokar du genom att fylla formuläret nedan.
             </Text>
             <Button
               href="https://www.google.com"
