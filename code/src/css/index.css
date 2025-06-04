@@ -109,6 +109,13 @@ body.no-scroll {
   text-decoration: none;
 }
 
+.styled-active-button.active, .styled-active-button.active:hover {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-strong);
+  cursor: default;
+  opacity: 0.8;
+}
+
 @media (min-width: 1280px) {
   a:hover {
     color: #CB4A4A;
@@ -122,6 +129,7 @@ body.no-scroll {
   .styled-links.active {
     color: var(--color-text-strong);
     text-decoration: none;
+    cursor: default;
   }
 
   .booking-form {

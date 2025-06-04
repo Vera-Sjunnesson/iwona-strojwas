@@ -13,7 +13,10 @@ export const Header = () => {
       </NavLink>
       <div className="flex justify-end item-center">
         <NavBar />
-        <Button href="/boka" buttonSize="small">
+        <Button
+          href="/boka"
+          buttonSize="small"
+          className="styled-active-button">
           Boka terapi
         </Button>
         <HamburgerMenu />
