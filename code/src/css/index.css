@@ -53,6 +53,11 @@ a {
   font-style: italic;
 }
 
+.artist-website-link:focus, .artist-website-link:hover, .artist-website-link:active {
+  text-decoration: none;
+  color: var(--color-text-default);
+}
+
 .booking-form {
   padding: 70px 8px 40px 8px;
 }
@@ -107,7 +112,6 @@ body.no-scroll {
 @media (min-width: 1280px) {
   a:hover {
     color: #CB4A4A;
-    text-decoration: none;
   }
 
   .styled-links:hover {
@@ -124,10 +128,6 @@ body.no-scroll {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  
-  a:hover {
-    color:  #CB4A4A;
   }
 
   button {

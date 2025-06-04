@@ -29,14 +29,14 @@ export const PhotoTag = ({photographerName, color, website = false, isPositionLe
         </Text>
       ):(
         <Text
-        level={3}
-        color={color}
-        fontStyle="italic"
-        className={
-          `absolute bottom-0 z-40 text-white italic p-1 
-          ${isPositionLeft ? 'left-0' : 'right-0'}`
-          }>
-          {photographerName}
+          level={3}
+          color={color}
+          fontStyle="italic"
+          className={
+            `absolute bottom-0 z-40 text-white italic p-1 
+            ${isPositionLeft ? 'left-0' : 'right-0'}`
+            }>
+            {photographerName}
       </Text>    
       )}
     </>   
