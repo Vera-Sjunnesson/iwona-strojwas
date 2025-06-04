@@ -68,11 +68,11 @@
   /*   box-shadow: 7px 7px 19px 0px rgba(0,0,0,0.50); */
   }
   
-  .nav-right.visible-xs {
+  .nav-right.visible-xxs {
     z-index: 3;
   }
   
-  .hidden-xs {
+  .hidden-xxs {
     display: none;
   }
   
@@ -115,7 +115,7 @@
     transition: all .7s ease;
   }
   
-  .nav-right.visible-xs .active .bar {
+  .nav-right.visible-xxs .active .bar {
     background-color: #222;
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;

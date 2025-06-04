@@ -29,7 +29,7 @@ export const HamburgerMenu = () => {
 
   return (
     <nav>
-      <div className="nav-right visible-xs">
+      <div className="nav-right visible-xxs">
         <button
           onClick={onToggleMenu}
           type="button"

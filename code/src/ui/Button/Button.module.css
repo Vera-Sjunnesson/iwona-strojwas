@@ -8,7 +8,12 @@
   white-space: nowrap;
   align-self: center;
   box-shadow: 0 5px 5px 0px rgba(34,34,34,0.1);
+  text-decoration: none;
+}
 
+.btn:focus, .btn:hover, .btn:active {
+  text-decoration: none;
+  color: var(--color-text-default);
 }
 
 /* Button variants */
@@ -16,11 +21,13 @@
 .btn--primary {
   background-color: var(--color-background-secondary);
   color: var(--color-text-default);
+  text-decoration: none;
 }
 
 .btn--secondary {
   background-color: var(--color-background-tertiary);
   color: var(--color-text-inverted);
+  text-decoration: none;
 }
 
 /*
@@ -44,6 +51,13 @@
   border-radius:0.7rem;
 }
 
+@media (min-width: 1280px) {
+  .btn:hover {
+    color: #CB4A4A;
+  }
+}
+
+
 @media (min-width: 502px) {
   .btn--small {
     padding: 0.5rem 2.625rem;
@@ -56,3 +70,4 @@
     border-radius: 1.188rem;
   }
 }
+

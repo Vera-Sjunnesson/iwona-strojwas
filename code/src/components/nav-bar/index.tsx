@@ -26,7 +26,7 @@ export const NavBar = () => {
         <NavLink
           key={item.id}
           to={item.to}
-          className="font-medium">
+          className="styled-links">
           {item.title}
         </NavLink>
         ))}

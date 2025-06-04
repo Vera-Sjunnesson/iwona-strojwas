@@ -44,8 +44,8 @@ body {
 a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: var(--color-text-default) !important;
-  text-decoration: none !important;
+  color: var(--color-text-default);
+  text-decoration: none;
 }
 
 .artist-website-link {
@@ -97,9 +97,22 @@ body.no-scroll {
   transition: all 1s ease-in-out;
 }
 
+.styled-links {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text-default);
+  text-decoration: none;
+}
+
 @media (min-width: 1280px) {
   a:hover {
-    color: #CB4A4A !important;
+    color: #CB4A4A;
+    text-decoration: none;
+  }
+
+  .styled-links:hover {
+    color: #CB4A4A;
+    text-decoration: none;
   }
 
   .booking-form {
@@ -112,6 +125,7 @@ body.no-scroll {
     color: #213547;
     background-color: #ffffff;
   }
+  
   a:hover {
     color:  #CB4A4A;
   }
