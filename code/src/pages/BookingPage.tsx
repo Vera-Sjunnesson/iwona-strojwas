@@ -11,8 +11,8 @@ export const BookingPage = () => {
   }, []);
 
   return (
-    <div className="p-4">
-      <div id="ctnotesform" style={{ display: "inline-block" }} />
+    <div>
+      <div id="ctnotesform" className="booking-form" style={{ display: "inline-block" }}></div>
     </div>
   );
 };

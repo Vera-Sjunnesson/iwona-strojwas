@@ -51,7 +51,7 @@ export const InfoPage = () => {
               Därför erbjuder jag psykoterapi online och rådgivning som gör det möjligt för dig att få stöd var och när det passar dig bäst med samma engagemang och professionalism som i personliga möten och flexibla tider. Samtalen sker genom en videolänk som skickas till dig vid bokning. Du behöver mobil eller dator, internetuppkoppling och BankID för att logga in. Videotjänsten är säker och skyddad. Tiden bokar du genom att fylla formuläret nedan.
             </Text>
             <Button
-              href="https://www.google.com"
+              href="/boka"
               type="secondary"
               className="mt-8">
               Boka terapi

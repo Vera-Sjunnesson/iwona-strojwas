@@ -44,8 +44,8 @@ body {
 a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: var(--color-text-default);
-  text-decoration: none;
+  color: var(--color-text-default) !important;
+  text-decoration: none !important;
 }
 
 .artist-website-link {
@@ -53,10 +53,8 @@ a {
   font-style: italic;
 }
 
-@media (min-width: 1280px) {
-  a:hover {
-    color: #CB4A4A;
-  }
+.booking-form {
+  padding: 70px 8px 40px 8px;
 }
 
 h1, h2, h3, h5, h6 {
@@ -99,6 +97,16 @@ body.no-scroll {
   transition: all 1s ease-in-out;
 }
 
+@media (min-width: 1280px) {
+  a:hover {
+    color: #CB4A4A !important;
+  }
+
+  .booking-form {
+    padding: 100px 16px 40px 16px;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -107,6 +115,7 @@ body.no-scroll {
   a:hover {
     color:  #CB4A4A;
   }
+
   button {
     background-color:  #CB4A4A;
   }

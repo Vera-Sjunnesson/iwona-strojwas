@@ -13,7 +13,7 @@ export const Header = () => {
       </NavLink>
       <div className="flex justify-end item-center">
         <NavBar />
-        <Button buttonSize="small">
+        <Button href="/boka" buttonSize="small">
           Boka terapi
         </Button>
         <HamburgerMenu />

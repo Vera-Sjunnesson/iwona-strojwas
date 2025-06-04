@@ -23,7 +23,7 @@ export const HeroSection = () => {
         <Text color="secondary" level={2} weight="medium">
           Varmt välkommen till en plats där ditt inre välmående står i centrum. Som legitimerad psykoterapeut är jag här för att stödja dig i din utveckling och förändring.
         </Text>
-        <Button href="https://www.google.com" className="mt-8">
+        <Button href="/boka" className="mt-8">
           Boka terapi
         </Button>
       </article>

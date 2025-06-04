@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import ButtonStyles from './Button.module.css'
 
 export type ButtonType =
@@ -11,7 +12,7 @@ type ButtonProps = {
   className?: string
   buttonSize?: ButtonSize
   type?: ButtonType
-  href?: string
+  href: string
 }
 
 export const Button = (
@@ -39,9 +40,9 @@ export const Button = (
     }
   
     return (
-      <a href={href} className={classes.join(' ')}>
+      <NavLink to={href} className={classes.join(' ')}>
         {children}
-      </a>
+      </NavLink>
     )
   }
 )
