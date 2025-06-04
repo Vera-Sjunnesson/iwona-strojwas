@@ -27,11 +27,6 @@ export const InfoPage = () => {
       <div className="relative h-full">
         <div style={{ backgroundImage: `url(${climbingImg1})` }} className="h-full bg-cover bg-right-top lg:hidden" />
         <div style={{ backgroundImage: `url(${climbingImg2})` }} className="h-full bg-cover bg-left-top xl:hidden" />
-{/*         <div
-          style={{
-            backgroundImage: "linear-gradient(180deg, rgb(255 255 255 / 70%) 30%, rgba(34, 34, 34, 0) 65%)"
-          }}
-          className="xl:hidden lg:block w-full h-full absolute top-0 left-0 bg-cover bg-right-top" /> */}
         <PhotoTag
           color="secondary"
           photographerName="Foto: Willian Justen de Vasconcellos" />

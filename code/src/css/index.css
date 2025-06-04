@@ -115,7 +115,12 @@ body.no-scroll {
   }
 
   .styled-links:hover {
-    color: #CB4A4A;
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .styled-links.active {
+    color: var(--color-text-strong);
     text-decoration: none;
   }
 
